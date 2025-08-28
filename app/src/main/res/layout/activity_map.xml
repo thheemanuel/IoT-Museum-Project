@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <ImageView
+        android:id="@+id/mapImage"
+        android:layout_width="400dp"
+        android:layout_height="717dp"
+        android:elevation="0dp"
+        android:hapticFeedbackEnabled="true"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/testmap"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/testmap"
+        tools:srcCompat="@drawable/testmap"
+        tools:visibility="visible" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/infoCard"
+        android:layout_width="368dp"
+        android:layout_height="274dp"
+        android:background="@drawable/rounded_corners"
+        android:elevation="40dp"
+        android:translationX="10dp"
+        android:translationY="240dp"
+        android:visibility="invisible"
+        app:cardElevation="25dp"
+        app:cardMaxElevation="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="376dp"
+            android:layout_height="207dp"
+            android:forceHasOverlappingRendering="false"
+            android:padding="4dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/exitInfo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="72dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#FB4646"
+                app:icon="@drawable/close"
+                app:iconGravity="top"
+                app:iconSize="32dp"
+                app:iconTint="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.992"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="1dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TextAppearance.MaterialComponents.Headline3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/arbutusslab_regular"
+                android:text="The Mona Lisa"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="5dp" />
+
+            <TextView
+                android:id="@+id/body"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="370dp"
+                android:layout_height="217dp"
+                android:layout_marginTop="12dp"
+                android:elevation="500dp"
+                android:fontFamily="@font/arbutusslab_regular"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                tools:layout_editor_absoluteX="-5dp"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="676dp"
+        android:text="BACK"
+        android:translationY="678dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+
+    <ImageButton
+        android:id="@+id/id1"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="282dp"
+        android:layout_marginEnd="383dp"
+        android:background="@drawable/node"
+        android:onClick="nodeClick"
+        android:tag="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <ImageButton
+        android:id="@+id/id11"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="307dp"
+        android:layout_marginTop="513dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="206dp"
+        android:background="@drawable/node"
+        android:onClick="nodeClick"
+        android:tag="b"
+        android:translationY="-15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <ImageButton
+        android:id="@+id/id4"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="229dp"
+        android:layout_marginTop="359dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="360dp"
+        android:background="@drawable/node"
+        android:onClick="nodeClick"
+        android:tag="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <ImageButton
+        android:id="@+id/id10"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="383dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/node"
+        android:onClick="nodeClick"
+        android:tag="a"
+        android:translationX="-20dp"
+        android:translationY="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id15"
+        app:srcCompat="@drawable/node" />
+
+    <ImageButton
+        android:id="@+id/id15"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="383dp"
+        android:layout_marginTop="247dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/node"
+        android:onClick="nodeClick"
+        android:tag="f"
+        android:translationX="-20dp"
+        app:layout_constraintBottom_toTopOf="@+id/id10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <ImageButton
+        android:id="@+id/id14"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="521dp"
+        android:background="@drawable/node"
+        android:onClick="nodeClick"
+        android:tag="e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <ImageButton
+        android:id="@+id/id3"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginBottom="521dp"
+        android:background="@drawable/node"
+        android:onClick="nodeClick"
+        android:tag="3"
+        android:translationX="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id12"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <ImageButton
+        android:id="@+id/id5"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="189dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginBottom="484dp"
+        android:background="@drawable/node"
+        android:onClick="nodeClick"
+        android:tag="5"
+        android:translationX="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <ImageButton
+        android:id="@+id/id8"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="482dp"
+        android:layout_marginEnd="238dp"
+        android:layout_marginBottom="237dp"
+        android:background="@drawable/node"
+        android:onClick="nodeClick"
+        android:tag="8"
+        android:translationX="-5dp"
+        android:translationY="-10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <ImageButton
+        android:id="@+id/id13"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="346dp"
+        android:layout_marginBottom="225dp"
+        android:background="@drawable/node"
+        android:onClick="nodeClick"
+        android:tag="d"
+        android:translationX="-5dp"
+        android:translationY="483dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <ImageButton
+        android:id="@+id/id9"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="438dp"
+        android:layout_marginEnd="306dp"
+        android:layout_marginBottom="281dp"
+        android:background="@drawable/node"
+        android:onClick="nodeClick"
+        android:tag="9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <ImageButton
+        android:id="@+id/id6"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="413dp"
+        android:layout_marginEnd="346dp"
+        android:layout_marginBottom="69dp"
+        android:background="@drawable/node"
+        android:onClick="nodeClick"
+        android:tag="6"
+        android:translationX="-7dp"
+        android:translationY="-7dp"
+        app:layout_constraintBottom_toTopOf="@+id/id13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <ImageButton
+        android:id="@+id/id7"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="383dp"
+        android:layout_marginBottom="349dp"
+        android:background="@drawable/node"
+        android:onClick="nodeClick"
+        android:tag="7"
+        android:translationY="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id1"
+        app:srcCompat="@drawable/node" />
+
+    <ImageButton
+        android:id="@+id/id12"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="521dp"
+        android:background="@drawable/node"
+        android:onClick="nodeClick"
+        android:tag="c"
+        android:translationX="230dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/id3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <ImageButton
+        android:id="@+id/id2"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="189dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/node"
+        android:onClick="nodeClick"
+        android:tag="2"
+        app:layout_constraintBottom_toTopOf="@+id/id1"
+        app:layout_constraintEnd_toStartOf="@+id/id5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <CheckBox
+        android:id="@+id/periodCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Period"
+        android:translationY="130dp" />
+
+    <CheckBox
+        android:id="@+id/artistCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artist"
+        android:translationX="100dp"
+        android:translationY="130dp" />
+
+    <CheckBox
+        android:id="@+id/typeCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:translationX="200dp"
+        android:translationY="130dp" />
+
+    <CheckBox
+        android:id="@+id/areaCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Area"
+        android:translationX="300dp"
+        android:translationY="130dp" />
+
+    <TextView
+        android:id="@+id/redText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are here"
+        android:textColor="#FFFFFF"
+        android:translationX="180dp"
+        android:translationY="650dp" />
+
+    <ImageButton
+        android:id="@+id/redNode"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="282dp"
+        android:layout_marginEnd="383dp"
+        android:background="@drawable/node"
+        android:backgroundTint="#FF0000"
+        android:translationX="140dp"
+        android:translationY="373dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <TextView
+        android:id="@+id/orangeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected exhibit"
+        android:textColor="#FFFFFF"
+        android:translationX="180dp"
+        android:translationY="625dp" />
+
+    <ImageButton
+        android:id="@+id/orangeNode"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="282dp"
+        android:layout_marginEnd="383dp"
+        android:background="@drawable/node"
+        android:backgroundTint="#FF8222"
+        android:translationX="140dp"
+        android:translationY="348dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <TextView
+        android:id="@+id/greenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Similar exhibit"
+        android:textColor="#FFFFFF"
+        android:translationX="180dp"
+        android:translationY="600dp" />
+
+    <ImageButton
+        android:id="@+id/greenNode"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="282dp"
+        android:layout_marginEnd="383dp"
+        android:background="@drawable/node"
+        android:backgroundTint="#1AFF00"
+        android:translationX="140dp"
+        android:translationY="323dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/node" />
+
+    <TextView
+        android:id="@+id/currentAttributes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are currently at the exhibit (name) which has the attributes: \nPeriod: blahgbal\nArtist: davinfi\nType: asdff\nArea: B1"
+        android:translationY="20dp" />
+
+</RelativeLayout>

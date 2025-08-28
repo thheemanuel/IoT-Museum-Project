@@ -1,0 +1,47 @@
+exhibit_id = 1
+similar_exhibit = The Mona Lisa, painted by Leonardo da Vinci, is a renowned masterpiece, known for her enigmatic smile and timeless allure.
+-
+exhibit_id = 2
+similar_exhibit = "Lady with an Ermine" by Leonardo da Vinci features a woman holding an ermine, portraying grace, mystery, and Renaissance elegance.
+-
+exhibit_id = 3
+similar_exhibit = Van Gogh's self-portraits capture intense emotion, vibrant colors, and expressive brushstrokes, reflecting his inner struggles and artistic brilliance.
+-
+exhibit_id = 4
+similar_exhibit = Michelangelo's "David" is a masterpiece of Renaissance sculpture, depicting the biblical hero with intricate details, muscular form, and sublime expression.
+-
+exhibit_id = 5
+similar_exhibit = "Fearless Girl" by Kristen Visbal is a bronze statue on Wall Street defiantly facing the Charging Bull, symbolizing courage and gender equality.
+-
+exhibit_id = 6
+similar_exhibit = Michelangelo's "The Last Judgment" in the Sistine Chapel portrays Christ's final judgment, featuring dynamic figures and emotional intensity.
+-
+exhibit_id = 7
+similar_exhibit = "The Birth of Venus" by Sandro Botticelli is a celebrated Renaissance painting depicting the goddess Venus emerging from the sea, symbolizing beauty and love.
+-
+exhibit_id = 8
+similar_exhibit = "The Girl with a Pearl Earring" is Johannes Vermeer's masterpiece, a captivating portrait featuring a girl with an enigmatic gaze and a pearl earring.
+-
+exhibit_id = 9
+similar_exhibit = "The Milkmaid" is a masterpiece by Johannes Vermeer, depicting a domestic scene of a maid pouring milk, renowned for its exquisite composition and use of light.
+-
+exhibit_id = a
+similar_exhibit = Donatello's "Pazzi Madonna" is a marble relief in Florence, part of the Pazzi Chapel, featuring the Madonna and Child.
+-
+exhibit_id = b
+similar_exhibit = "The Gates of Hell" is a monumental sculptural group work created by Auguste Rodin, featuring scenes inspired by Dante Alighieri's "Inferno."
+-
+exhibit_id = c
+similar_exhibit = "Starry Night" is a masterpiece by Vincent van Gogh, depicting a swirling night sky with cypress trees and a tranquil village.
+-
+exhibit_id = d
+similar_exhibit = "The Scream" is an iconic painting by Edvard Munch, expressing intense anxiety with a central figure against a swirling, distorted background.
+-
+exhibit_id = e
+similar_exhibit = "The Last Supper" is a renowned mural painting by Leonardo da Vinci, portraying Jesus Christ and his disciples during their final meal.
+-
+exhibit_id = f
+similar_exhibit = "The Persistence of Memory" is a famous painting by Salvador Dalí, featuring melting clocks in a dreamlike landscape, symbolizing the fluidity of time.
+-
+
+
